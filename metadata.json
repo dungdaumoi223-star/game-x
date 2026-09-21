@@ -1,0 +1,6 @@
+{
+  "name": "Math Rune: Draw & Solve",
+  "description": "Game thẻ bài toán học chiến thuật Push-Your-Luck trực tuyến với chế độ đấu AI, PvP Realtime WebSocket, 60 lá bài 10 hệ toán học, 16 Rune ma thuật và bảng xếp hạng.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

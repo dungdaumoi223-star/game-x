@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: math-rune
+    runtime: node
+    plan: starter # đổi thành "free" nếu chưa muốn trả phí (nhưng KHÔNG có disk -> mất dữ liệu khi restart)
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATA_DIR
+        value: /var/data
+    disk:
+      name: math-rune-data
+      mountPath: /var/data
+      sizeGB: 1
